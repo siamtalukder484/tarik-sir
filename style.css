@@ -9,26 +9,36 @@ body{
 
 .boxinner{
     display: inline-block;
-    position: relative;
     margin: 200px;
+}
+.link{
+    position: relative;
+    background-color: blue;
 }
 .info{
     position: absolute;
     top: -120px;
-    left: 100px;
-    background-color: white;
-    width: 200px;
-    height: 100px;
+    left: 0px;
+    background-color: transparent;
+    padding-left: 50px;
+    padding-bottom: 20px;
     opacity: 0;
+    visibility: hidden;
     transition: linear 0.3s;
     -webkit-transition: linear 0.3s;
     -moz-transition: linear 0.3s;
     -ms-transition: linear 0.3s;
     -o-transition: linear 0.3s;
 }
+.info_inner{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+}
 .link span{
     color: white;
 }
 .link:hover .info{
     opacity: 1;
+    visibility: visible;
 }
